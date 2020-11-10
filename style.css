@@ -7,11 +7,12 @@
  --color-light-white: #eeeeee;
  --color-dark-white: #bdbdbd;
  --color-pink: #fe918d;
+ --color-light-pink : #ead1ca; 
  --color-dark-pink: #ff6863;
  --color-dark-gray: #4d4d4d;
  --color-gray: #616161;
  --color-light-gray: #7c7979;
- --color-blue: #73aace;
+ --color-green: #1c613b;
  --color-yellow: #fff7d1;
  --color-orange: #feb546;
  --color-black: #000000;
@@ -45,6 +46,12 @@ body {
     cursor : default;
 }
 
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border : none;
+    outline: none;
+}
 
 /* typography */
 
@@ -83,7 +90,7 @@ p {
     display : flex;
     /* 중심축에서 정렬 */
     justify-content: space-between;
-    background-color : var(--color-white);
+    background-color : var(--color-light-pink);
     align-items: center;
     color : var(--color-dark-gray);
     padding : 16px;
@@ -113,7 +120,7 @@ ul {
 }
 
 .navbar_logo img {
-    width : 60px;
+    width : 70px;
 }
 
 
@@ -125,4 +132,34 @@ ul {
 .navbar_menu_item:hover {
     background-color: var(--color-yellow);
     border-radius: var(--size-border-radius);
+}
+
+#home {
+    background: url('imgs/background.png') center/cover no-repeat;
+    padding: 40px;
+    text-align : center;
+}
+
+.home_profile{
+    width : 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-light-white)
+}
+
+.home_title {
+    color : var(--color-pink);
+}
+
+.home_description {
+    color : var(--color-green);
+}
+
+.home_contact {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    margin: 24px;
+    padding: 8px 12px;
+    border : 2px solid white;
+    border-radius: var(--size-border-radius);
+    color : var(--color-white);
 }
