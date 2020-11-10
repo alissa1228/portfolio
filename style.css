@@ -22,10 +22,14 @@
  --font-regular: 18px;
  --font-small: 16px;
  --font-micro: 14px;
+
  /* font weight */
  --weight-bold: 700;
  --weight-semi-bold: 600;
 --weight-regular: 400;
+
+/* size */
+--size-border-radius : 4px;
 
 }
 
@@ -34,6 +38,13 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin : 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor : default;
+}
+
 
 /* typography */
 
@@ -64,4 +75,54 @@ p {
     font-weight: var(--weight-regular);
     color : var(--color-black);
     margin : 4px 0;
+}
+
+/* Navbar */
+
+#navbar {
+    display : flex;
+    /* 중심축에서 정렬 */
+    justify-content: space-between;
+    background-color : var(--color-white);
+    align-items: center;
+    color : var(--color-dark-gray);
+    padding : 16px;
+}
+
+a {
+    text-decoration: none;
+    color : var(--color-dark-gray);
+}
+
+ul {
+    list-style: none;
+    padding-left : 0;
+}
+
+.navbar_menu {
+    display: flex;
+    
+}
+
+.navbar_menu_item {
+    padding : 8px 12px;
+    margin : 0 4px;
+    cursor : pointer;
+    border-radius: var(--size-border-radius);
+    
+}
+
+.navbar_logo img {
+    width : 60px;
+}
+
+
+/* .navbar_menu_item.active {
+    border : 1px solid gray;
+}
+ */
+
+.navbar_menu_item:hover {
+    background-color: var(--color-yellow);
+    border-radius: var(--size-border-radius);
 }
