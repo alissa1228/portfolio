@@ -182,6 +182,10 @@ ul {
 .section {
     padding : 50px;
     text-align: center;
+    margin : auto;
+}
+
+.section_container {
     max-width: 1200px;
     margin : auto;
 }
@@ -252,4 +256,66 @@ ul {
 
 .school_period {
     font-size : var(--font-micro);
+}
+
+/* Skills */
+
+#skills {
+    background-color : var(--color-yellow);
+}
+
+.skillset {
+    display : flex;
+    background-color : var(--color-light-gray);
+    color : var(--color-light-white);
+    margin : 20px 0;
+}
+
+.skillset_title {
+    color : var(--color-white); 
+    /* margin : auto;   */
+}
+
+.skillset_left {
+    flex-basis: 60%;
+    background-color : var(--color-dark-gray);
+    padding : 20px 40px;
+}
+
+.skill_description {
+    display : flex;
+    justify-content: space-between;
+}
+
+.skillset_right {
+    flex-basis: 40%;
+}
+
+.tools {
+    background-color : var(--color-gray);
+}
+
+.skill {
+    margin-bottom : 32px;
+}
+
+
+/* 프로그레스 바 만들기 */
+
+.skill_bar {
+    width : 100%;
+    height : 3px;
+    background-color : var(--color-gray);
+    margin-top: 8px;
+}
+
+/* 프로그레스 바 색 채우기 */
+.skill_value {
+    /* width : 70%; */
+    height: 3px;
+    background-color: var(--color-dark-pink);
+}
+
+.tools , .etc {
+    padding : 20px;
 }
