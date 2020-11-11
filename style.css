@@ -261,14 +261,14 @@ ul {
 /* Skills */
 
 #skills {
-    background-color : var(--color-yellow);
+    background-color : var(--color-light-pink);
 }
 
 .skillset {
     display : flex;
     background-color : var(--color-light-gray);
     color : var(--color-light-white);
-    margin : 20px 0;
+    margin : 30px 0;
 }
 
 .skillset_title {
@@ -318,4 +318,102 @@ ul {
 
 .tools , .etc {
     padding : 20px;
+}
+
+/* Work */
+
+.work_categories {
+    margin : 40px;
+}
+
+.work_btn {
+    border : 1px solid var(--color-dark-gray);
+    border-radius: var(--size-border-radius);
+    font-size : var(--font-regular);
+    padding : 8px 48px;
+}
+
+/* .work_btn.active, */
+.work_btn:hover {
+    background-color : var(--color-pink);
+    color : var(--color-white);
+}
+
+.work_btn:hover .count{
+    opacity: 1;
+    top : 0;
+}
+
+.count {
+    display : inline-block;
+    background-color:  var(--color-orange);
+    border-radius: 50%;
+    color : var(--color-light-white);
+    width : 20px;
+    height : 20px;
+    line-height: 20px;
+    position : relative;
+    top : -20px;
+    left : 4px;
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.work_projects{
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: center;
+
+}
+
+.project {
+    width : 280px;
+    height : 250px;
+    margin : 2px;
+    background-color: var(--color-light-white);
+    position: relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_img {
+    max-width : 100%;
+    max-height: 100%;
+}
+
+.project_description {
+   position : absolute; 
+   background-color : var(--color-black);
+   display : flex;
+   flex-direction: column;
+   justify-content: center;
+   top : 0;
+   left : 0;
+   width : 100%;
+   height : 100%;
+   opacity: 0;
+   transform: translateY(10px);
+   transition: all var(--animation-duration) ease-in;
+}
+
+.project_description:hover{
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+
+.project_description h3 {
+    color : var(--color-white);
+}
+
+.project_description h3:after{
+    content : '';
+    display : block;
+    position: relative;
+    left : 50%;
+    margin-left : -12px;
+    margin-top : 8px;
+    width : 25px;
+    height: 2px;
+    background-color: var(--color-dark-white);
 }
