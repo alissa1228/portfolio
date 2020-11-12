@@ -140,6 +140,18 @@ ul {
     border-radius: var(--size-border-radius);
 }
 
+.navbar_toggle {
+    position : absolute;
+    right : 32px;
+    top : 24px;
+    font-size : 24px;
+    color : var(--color-gray);
+    display : none;
+    /* opacity 사용하면 클릭이 가능함. display로 처리해주는 게 좋다 */
+}
+
+/* Home */
+
 #home {
     background: url('imgs/background.png') center/cover no-repeat;
     padding: 40px;
@@ -466,12 +478,16 @@ ul {
     background-color : var(--color-light-pink);
 }
 
-.contact_title, .contact_email {
+.contact_title, .contact_email,.contact_phone {
     color : var(--color-pink);
 }
 
-.contact_title{
+.contact_title, .contact_phone{
     margin : 32px 0;
+}
+
+.contact_phone{
+    font-size : var(--font-medium);
 }
 
 .contact_links {
@@ -488,3 +504,45 @@ ul {
     color : var(--color-green);
 }
 
+
+
+
+/* 768px 이하 screen */
+
+@media screen and (max-width : 768px){
+    .navbar_toggle {
+        display : block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        text-align: center;
+        width : 100%;
+        display : none;
+    }
+
+    .about_major {
+        flex-direction: column;
+    }
+
+    .major{
+        margin-bottom: 38px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+
+    .work_btn{
+        margin-bottom: 8px;
+    }
+}
