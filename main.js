@@ -42,9 +42,28 @@ homeContactBtn.addEventListener('click',()=>{
     scrollIntoView('#contact');
 });
 
+
+//Make home slowly fade to transparent as the window scrolls down
+
+const home = document.querySelector('.home_container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll',()=>{
+    //console.log(1- window.scrollY / homeHeight);
+    /*
+    scroll이 800이고 homeheight가 800일 때 -> 1-1= 0 투명
+    scroll이 0이고 homeheight가 800일 때 -> 1-0= 1 불투명
+    */
+   home.style.opacity = 1- window.scrollY / homeHeight;
+
+});
+
+
+
 //메소드로 추출
 
 function scrollIntoView(selector) {
     const scollTo = document.querySelector(selector);
     scollTo.scrollIntoView({behavior : "smooth"});
 }
+
+
