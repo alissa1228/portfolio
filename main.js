@@ -30,9 +30,21 @@ navbarmenu.addEventListener('click',(e)=>{
     if(link==null) {
         return;
     }
-    console.log(e.target.dataset.link); //우리가 data-link로 정의한 요소가 클릭하면 나온다
-    const scollTo = document.querySelector(link);
-    scollTo.scrollIntoView({behavior : "smooth"});
+    //console.log(e.target.dataset.link); //우리가 data-link로 정의한 요소가 클릭하면 나온다
+    scrollIntoView(link);
 });
 
 
+//handle click on "contact me" button on home
+
+const homeContactBtn = document.querySelector('.home_contact');
+homeContactBtn.addEventListener('click',()=>{
+    scrollIntoView('#contact');
+});
+
+//메소드로 추출
+
+function scrollIntoView(selector) {
+    const scollTo = document.querySelector(selector);
+    scollTo.scrollIntoView({behavior : "smooth"});
+}
