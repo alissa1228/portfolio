@@ -78,6 +78,39 @@ arrowUp.addEventListener('click',()=>{
 
 
 
+
+//work flitering
+
+const workBtnContainer = document.querySelector('.work_categories');
+const projectContainer = document.querySelector('.work_projects');
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click',(e)=>{
+    const fliter = e.target.dataset.fliter || e.target.parentNode.dataset.fliter;
+    if(fliter==null){
+        return;
+    }
+
+    projectContainer.classList.add('ani-out');
+    setTimeout(()=>{
+        
+        //배열 형태로 프로젝트 가져온 후 필터링
+        projects.forEach((project)=>{
+            if(fliter === "all" || fliter === project.dataset.type) {
+                project.classList.remove('invisible');
+                //데이터 타입이 동일하면 보이게 'invisible 삭제'
+            }else{
+                project.classList.add('invisible');
+            }
+        });
+
+        projectContainer.classList.remove('ani-out');
+    },300);
+    
+
+});
+
+
 //메소드로 추출
 
 function scrollIntoView(selector) {

@@ -429,7 +429,14 @@ ul {
     display : flex;
     flex-wrap : wrap;
     justify-content: center;
+    opacity: 1;
+    transition: all var(--animation-duration) ease-out;
+}
 
+
+.work_projects.ani-out {
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -442,6 +449,11 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
+.project.invisible {
+    display : none;
+}
+
 
 .project_img {
     max-width : 100%;
@@ -542,6 +554,9 @@ ul {
     pointer-events: auto;
     
 }
+
+
+
 
 /* 768px 이하 screen */
 
