@@ -58,6 +58,25 @@ document.addEventListener('scroll',()=>{
 });
 
 
+//arrow up button(스크롤을 내리면 생기게)
+
+const arrowUp =document.querySelector('.arrow_up');
+document.addEventListener('scroll', () =>{
+    if(window.scrollY>homeHeight/2){   
+        arrowUp.classList.add('visible');
+    }else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+
+//handle arrow button
+
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#home');
+});
+
+
 
 //메소드로 추출
 
@@ -65,5 +84,7 @@ function scrollIntoView(selector) {
     const scollTo = document.querySelector(selector);
     scollTo.scrollIntoView({behavior : "smooth"});
 }
+
+
 
 

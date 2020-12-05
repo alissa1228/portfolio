@@ -517,13 +517,38 @@ ul {
 }
 
 
+/* scroll arrow */
 
+.arrow_up {
+    position : fixed;
+    bottom : 50px;
+    right : 50px;
+    width : 50px;
+    height : 50px;
+    font-size : 30px;
+    background-color : var(--color-dark-pink);
+    color : var(--color-white);
+    border-radius: 50%;
+    /* display : none; */
+    opacity : 0;
+    transition : opacity 300ms ease-in;
+    pointer-events: none;
+}
+
+
+.arrow_up.visible {
+    display : block;
+    opacity: 1;
+    pointer-events: auto;
+    
+}
 
 /* 768px 이하 screen */
 
 @media screen and (max-width : 768px){
     .navbar_toggle {
         display : block;
+        
     }
 
     #navbar {
