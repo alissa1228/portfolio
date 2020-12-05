@@ -17,21 +17,31 @@ document.addEventListener('scroll',()=>{
 });
 
 
+
 // scoll to section(Handle scolling when tapping on the navbar menu)
 
 /*1. 클릭을 했을 때 원하는 아이디를 알아야함
 2. 눌렀을 때 좌표로 스크롤링
 */
-const navbarmenu = document.querySelector('.navbar_menu');
-navbarmenu.addEventListener('click',(e)=>{
+const navbarMenu = document.querySelector('.navbar_menu');
+navbarMenu.addEventListener('click',(e)=>{
     const target = e.target;
     const link = target.dataset.link;
 
     if(link==null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     //console.log(e.target.dataset.link); //우리가 data-link로 정의한 요소가 클릭하면 나온다
     scrollIntoView(link);
+});
+
+
+//navbar toggle
+
+const navbarToggleBtn = document.querySelector('.navbar_toggle');
+navbarToggleBtn.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('open');
 });
 
 
@@ -91,7 +101,16 @@ workBtnContainer.addEventListener('click',(e)=>{
         return;
     }
 
-    projectContainer.classList.add('ani-out');
+   const acitve = document.querySelector('.work_btn.selected');
+   
+   acitve.classList.remove('selected');
+   
+   const target =  
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+   target.classList.add('selected');
+    
+   
+   projectContainer.classList.add('ani-out');
     setTimeout(()=>{
         
         //배열 형태로 프로젝트 가져온 후 필터링
