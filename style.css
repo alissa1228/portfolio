@@ -6,14 +6,17 @@
  --color-white: #ffffff;
  --color-light-white: #eeeeee;
  --color-dark-white: #bdbdbd;
- --color-pink: #fe918d;
+ --color-pink : #ff738e;
+ --color-light-blue : #0dd0d8;
+ /* --color-pink: #fe918d; */
  --color-light-pink : #ead1ca; 
  --color-dark-pink: #ff6863;
  --color-dark-gray: #4d4d4d;
  --color-gray: #616161;
  --color-light-gray: #7c7979;
  --color-green: #1c613b;
- --color-yellow: #fff7d1;
+ --color-light-yellow: #fff7d1;
+ --color-yellow: #ffd43b;
  --color-orange: #feb546;
  --color-black: #000000;
 
@@ -64,7 +67,7 @@ button {
 h1 {
     font-size : var(--font-large);
     font-weight: var(--weight-bold);
-    color : var(--color-black0);
+    color : var(--color-black);
     margin : 16px 0;
     /* 위아래 양 옆에 */
 }
@@ -147,7 +150,7 @@ ul {
  */
 
 .navbar_menu_item:hover {
-    background-color: var(--color-yellow);
+    background-color: var(--color-white);
     border-radius: var(--size-border-radius);
     color : var(--color-light-gray);
 }
@@ -165,7 +168,7 @@ ul {
 /* Home */
 
 #home {
-    background: url('imgs/background.png') center/cover no-repeat;
+    background: url('imgs/background2.png') center/cover no-repeat;
     padding: 40px;
     padding-top : 120px;
     text-align : center;
@@ -174,11 +177,11 @@ ul {
 .home_profile{
     width : 250px;
     border-radius: 50%;
-    border: 2px solid var(--color-light-white)
+    border: 2px solid var(--color-light-white);
 }
 
 .home_title {
-    color : var(--color-pink);
+    color : var(--color-dark-gray);
 }
 
 .home_description {
