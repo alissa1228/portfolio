@@ -14,8 +14,6 @@
  --color-light-gray: #7c7979;
  --color-green: #1c613b;
  --color-light-yellow: #fff7d1;
- /* --color-yellow: #ffd43b;
- --color-orange: #feb546; */
  --color-black: #000000;
 
  /* font size */
@@ -370,12 +368,12 @@ ul {
 /* .work_btn.active */
 
 .work_btn.selected {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     color : var(--color-white);
 }
 
 .work_btn:hover {
-    background-color : var(--color-pink);
+    background-color : var(--color-dark-blue);
     color : var(--color-white);
 }
 
@@ -386,9 +384,9 @@ ul {
 
 .count {
     display : inline-block;
-    background-color:  var(--color-orange);
+    background-color:  var(--color-white);
     border-radius: 50%;
-    color : var(--color-light-white);
+    color : var(--color-light-gray);
     width : 20px;
     height : 20px;
     line-height: 20px;
@@ -456,7 +454,7 @@ ul {
 }
 
 .project_description h3 {
-    color : var(--color-orange);
+    color : var(--color-light-blue);
 }
 
 .project_description h3:after{
@@ -468,25 +466,25 @@ ul {
     margin-top : 8px;
     width : 50px;
     height: 2px;
-    background-color: var(--color-dark-white);
+    background-color: var(--color-light-yellow);
 }
 
 /* contact */
 
 #contact {
-    background-color : var(--color-light-pink);
+    background-color : var(--color-dark-blue);
 }
 
 .contact_title, .contact_email,.contact_phone {
-    color : var(--color-pink);
+    color : var(--color-light-white);
 }
 
 .contact_title, .contact_phone{
-    margin : 32px 0;
+    margin : 30px 0;
 }
 
-.contact_phone{
-    font-size : var(--font-medium);
+.contact_email, .contact_phone{
+    font-size : var(--font-regular);
 }
 
 .contact_links {
@@ -500,7 +498,7 @@ ul {
 
 .contact_links i:hover {
     transform: scale(1.1);
-    color : var(--color-green);
+    color : var(--color-light-yellow);
 }
 
 
@@ -513,7 +511,7 @@ ul {
     width : 50px;
     height : 50px;
     font-size : 30px;
-    background-color : var(--color-dark-pink);
+    background-color : var(--color-light-blue);
     color : var(--color-white);
     border-radius: 50%;
     /* display : none; */
@@ -545,7 +543,7 @@ ul {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
-        background-color : var(--color-pink);
+        background-color : var(--color-blue);
     }
 
     .navbar_menu {
