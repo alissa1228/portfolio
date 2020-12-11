@@ -323,7 +323,7 @@ ul {
 }
 
 .tools {
-    background-color : var(--color-gray);
+    background-color : var(--color-dark-blue);
 }
 
 .skill {
@@ -344,7 +344,7 @@ ul {
 .skill_value {
     /* width : 70%; */
     height: 3px;
-    background-color: var(--color-dark-pink);
+    background-color: var(--color-light-blue);
 }
 
 .tools , .etc {
