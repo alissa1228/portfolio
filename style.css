@@ -292,7 +292,7 @@ ul {
 /* Skills */
 
 #skills {
-    background-color : var(--color-light-pink);
+    background-color : var(--color-light-white);
 }
 
 .skillset {
@@ -350,42 +350,6 @@ ul {
 .tools , .etc {
     padding : 20px;
 }
-
-
-/* exp */
-
-#experience {
-    background-color: var(--color-light-white);
-}
-
-
-.exp {
-    margin : 40px;
-}
-
-.exp_list {
-    display : flex;
-}
-
-
-.exp_logo {
-    width : 70px;
-    height: 70px;
-}
-
-.exp_bubble {
-    background-color : var(--color-white);
-    border-radius: var(--size-border-radius);
-    padding : 18px;
-}
-
-.exp_bubble p {
-    color : var(--color-light-gray);
-}
-
-/* .exp_bubble a {
-    color : var(--color-pink);
-} */
 
 
 /* Work */
