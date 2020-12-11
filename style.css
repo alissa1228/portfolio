@@ -6,18 +6,16 @@
  --color-white: #ffffff;
  --color-light-white: #eeeeee;
  --color-dark-white: #bdbdbd;
- --color-pink : #ff738e;
- --color-light-blue : #0dd0d8;
- /* --color-pink: #fe918d; */
- --color-light-pink : #ead1ca; 
- --color-dark-pink: #ff6863;
+ --color-blue : #4387db;
+ --color-light-blue :#03c0cd;
+ --color-dark-blue: #4271db;
  --color-dark-gray: #4d4d4d;
  --color-gray: #616161;
  --color-light-gray: #7c7979;
  --color-green: #1c613b;
  --color-light-yellow: #fff7d1;
- --color-yellow: #ffd43b;
- --color-orange: #feb546;
+ /* --color-yellow: #ffd43b;
+ --color-orange: #feb546; */
  --color-black: #000000;
 
  /* font size */
@@ -185,7 +183,7 @@ ul {
 }
 
 .home_description {
-    color : var(--color-green);
+    color : var(--color-dark-gray);
 }
 
 .home_contact {
@@ -193,16 +191,16 @@ ul {
     font-weight: var(--font-regular);
     margin: 24px;
     padding: 8px 12px;
-    border : 2px solid var(--color-green);
+    border : 2px solid var(--color-white);
     border-radius: var(--size-border-radius);
-    color : var(--color-green);
+    color : var(--color-white);
     transition: all var(--animation-duration) ease-in-out;
 }
 
 
 .home_contact:hover {
-    color : var(--color-dark-pink);
-    border : 1px solid var(--color-dark-pink);
+    color : var(--color-dark-white);
+    border : 1px solid var(--color-dark-white);
 }
 
 /* Section common */
@@ -234,8 +232,8 @@ ul {
     line-height: 170px;
     font-size : 70px;
     margin : 0 auto;
-    border : 1px solid var(--color-green);
-    color : var(--color-green);
+    border : 1px solid var(--color-light-blue);
+    color : var(--color-light-blue);
     border-radius: 50%;
     margin-bottom : 16px;
 }
@@ -254,8 +252,8 @@ ul {
 }
 
 .major_icon:hover {
-    color : var(--color-pink);
-    border : 1px solid var(--color-pink);
+    color : var(--color-dark-blue);
+    border : 1px solid var(--color-dark-blue);
     transform: rotate(-30deg) scale(1.1);
 }
 
